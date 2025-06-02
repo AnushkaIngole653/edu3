@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Interactive Quiz</title>
+  <style type="text/css">
+
+  body {
+  font-family: Arial, sans-serif;
+  background-color:#CCCCCC;
+}
+
+#quiz {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+ 
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(198, 222, 60, 0.2);
+}
+
+h1 {
+  text-align: center;
+  color: #000066;
+}
+
+#question {
+  margin-bottom: 20px;
+  
+  font-size: 22px;
+}
+
+#options {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 17px 80px;
+  background-color: #000066;
+  color: #CCCCCC;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+ 
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: #8f8d8d;
+}
+  .style2 {
+	color: #000066;
+	font-weight: bold;
+}
+  .style3 {
+	font-size: 22px;
+	color: #FFFFCC;
+	font-weight: bold;
+}
+  .style4 {
+	font-size: 20px;
+	color: #FFFFCC;
+}
+  .style5 {font-size: 20px; color: #FFFFCC; font-weight: bold; }
+  .style6 {font-size: 40px}
+  </style>
+</head>
+
+<body bgcolor="#CCCCCC">
+<table width="1400" height="119" border="1" cellpadding="5" cellspacing="5" bordercolor="#CCCCCC" bgcolor="#CCCCCC">
+  <tr>
+    <td width="287" height="40" bgcolor="#000066"><div align="center"><span class="style3"><a href="p2.htm" class="style5">Home</a></span></div></td>
+    <td width="273" bgcolor="#000066"><div align="center"><a href="dcsyll.htm" class="style5">Syllabus</a></div></td>
+    <td width="265" bgcolor="#000066"><div align="center" class="style3"><a href="dcnotes.htm" class="style4">Notes</a></div>      </td>
+    <td width="240" bgcolor="#000066"><div align="center"><a href="dctest.htm" class="style5">Test</a></div></td>
+    <td width="243" bgcolor="#000066"><div align="center"><a href="dcask1.htm" class="style5">Ask Me</a></div></td>
+  </tr>
+  <tr>
+    <td height="60" colspan="5" bgcolor="#CCCCCC"><div align="center">
+      <form id="form1" name="form1" method="post" action="">
+        <label>        </label>
+        <span class="style2 style6">Digital Communication </span>
+        
+      </form>
+    </div></td>
+  </tr>
+</table>
+
+  <br>
+  <table width="1000" height="300" border="4" bordercolor="#000066" align="center" cellpadding="5" cellspacing="5" bgcolor="white">
+  <tr>
+  <td>
+  <div id="quiz">
+    <h1><u>Unit-I | Digital Transmission of Analog Signal</u></h1>
+    <br>
+    <div id="question"></div>
+    <div id="options"></div>
+    <br>
+    <button id="submit">Submit</button>
+  </div>
+  </td>
+  </tr>
+</table>
+
+
+  <script src="scriptdc1.js"></script>
+</body>
+</html>
